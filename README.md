@@ -14,32 +14,32 @@ The following diagram is got from websit:
 https://journalofbusiness.org/index.php/GJMBR/article/download/1983/1885/.
 
 ### Input
-Machinery（Container）：it means the main body of the toyota vehicle. It has a storage（Container）
-Components（Container）：main components to build a car. It has a storage(Container), too.
+Machinery（Container）：it means the main body of the toyota vehicle. It has a storage（Container）  
+Components（Container）：main components to build a car. It has a storage(Container), too.  
 ### Activities
-Assembly（Container）：it gets the Machinery and components from two containers and save in assembly container. 
-Parts sequencing（process）：took several days (not hours) to make the Components to the right place.
-Setting up schedule（Process）：took several to build the scheduled plan.
-Production commence（Process）：begin to product vehicle.
+Assembly（Container）：it gets the Machinery and components from two containers and save in assembly container.   
+Parts sequencing（process）：took several days (not hours) to make the Components to the right place.  
+Setting up schedule（Process）：took several to build the scheduled plan.  
+Production commence（Process）：begin to product vehicle.  
 ### Output
-Quality check（process）：check quality of body and Components
-Vehicle assembling(Process)：assemble the body and components
-Dispatch zone(container)：store the vehicle which has been made.
+Quality check（process）：check quality of body and Components  
+Vehicle assembling(Process)：assemble the body and components  
+Dispatch zone(container)：store the vehicle which has been made.  
 ### Closure
-Dispatch to dealer(process)：transport to the dealer.
-In order to get the instant information, we add a process which can monitor the whole process status.
-Process_monitor(process)：a process which monitor the whole flow.
+Dispatch to dealer(process)：transport to the dealer.  
+In order to get the instant information, we add a process which can monitor the whole process status.  
+Process_monitor(process)：a process which monitor the whole flow.  
 
 ## Source code
-Refer to the main.py
+Refer to the main.py  
 ## code architecture
-Toyoto_Factory: The class for the wehicle.it has following attibutes and functions
-machinery:a container for storing machinery.
-machinery_control:process for machinery controlling.
-components:a container for storing components.
-components_control:process for components controlling.
-assembler:container for storing assembler
-assembler_control:process for assembler controlling
-dispatch:a container for storing production vehicles.
-dispatch_control:process for dispatch controlling.
-env_status_monitor:monitoring all the Toyoto_Factory
+Toyoto_Factory: The class for the wehicle.it has following attibutes and functions  
+machinery:a container for storing machinery.  
+machinery_control:process for machinery controlling.  
+components:a container for storing components.  
+components_control:process for components controlling.  
+assembler:container for storing assembler.  
+assembler_control:process for assembler controlling.  
+dispatch:a container for storing production vehicles.  
+dispatch_control:process for dispatch controlling.  
+env_status_monitor:monitoring all the Toyoto_Factory.  
