@@ -34,12 +34,12 @@ class Toyota_Factory:
         yield env.timeout(0)
         while True:
             if self.machinery.level <= machinery_critial_stock:
-                print(f'in the {0} day  the {1} hour ，vehicle machinery storage ({2})below the warning storage level '.format(
-                    int(env.now / 8), env.now % 8, self.machinery.level))
+                print('vehicle machinery storage ({0})below the warning storage level DAY={1},HOUR={2}'.format(
+                    self.machinery.level,int(env.now / 8), env.now % 8))
                 print('please contact toyota of japan！')
                 print('----------------------------------')
                 yield env.timeout(16)
-                print('in the {0}day  the {1} hour，vehicle machinery arrived'.format(int(env.now / 8), env.now % 8))
+                print('vehicle machinery arrived.  DAY = {0}, HOUR={1}'.format(int(env.now / 8), env.now % 8))
 
                 yield self.machinery.put(300)
                 print('vehicle machinery storage added to {0}'.format(
