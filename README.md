@@ -10,7 +10,7 @@ The behavior of active components (like vehicles, customers or messages) is mode
 Processes are described by simple Python generators. You can call them process function or process method, depending on whether it is a normal function or method of a class. During their lifetime, they create events and yield them in order to wait for them to be triggered.  
 When a process yields an event, the process gets suspended. SimPy resumes the process, when the event occurs (we say that the event is triggered). Multiple processes can wait for the same event. SimPy resumes them in the same order in which they yielded that event.  
 
-For much more information, please visit https://simpy.readthedocs.io/en/latest/..
+For much more information, please visit https://simpy.readthedocs.io/en/latest/.  
 
 ## Using simpy to simulate the production flow of toyoto
 The following diagram is got from websit:  
@@ -25,8 +25,8 @@ Parts sequencing（process）：took several days (not hours) to make the Compon
 Setting up schedule（Process）：took several to build the scheduled plan.  
 Production commence（Process）：begin to product vehicle.  
 ### Output
-Quality check（process）：check quality of body and Components  
-Vehicle assembling(Process)：assemble the body and components  
+Quality check（process）：check quality of body and Components.  
+Vehicle assembling(Process)：assemble the body and components.  
 Dispatch zone(container)：store the vehicle which has been made.  
 ### Closure
 Dispatch to dealer(process)：transport to the dealer.  
