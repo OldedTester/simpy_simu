@@ -37,13 +37,13 @@ Process_monitor(process)：a process which monitor the whole flow.
 ## Source code
 Refer to the main.py  
 ## code architecture
-Toyoto_Factory: The class for the wehicle.it has following attibutes and functions  
-machinery:a *container* for storing machinery.  
-machinery_control:*process* for machinery controlling.  
-components:a *container* for storing components.  
-components_control:*process* for components controlling.  
-assembler:*container* for storing assembler.  
-assembler_control:*process* for assembler controlling.  
-dispatch:a *container* for storing production vehicles.  
-dispatch_control:*process* for dispatch controlling.  
-env_status_monitor:monitoring all the Toyoto_Factory.  
+Toyoto_Factory: The **class** for the wehicle.it has following attibutes and functions  
+machinery:a **container** for storing machinery.  
+machinery_control:**process** for machinery controlling.  
+components:a **container** for storing components.  
+components_control:**process** for components controlling.  
+assembler:**container** for storing assembler.  
+assembler_control:**process** for assembler controlling.  
+dispatch:a **container** for storing production vehicles.  
+dispatch_control:**process** for dispatch controlling.  
+env_status_monitor:**process** for monitoring all the Toyoto_Factory.  
