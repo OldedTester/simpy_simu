@@ -15,7 +15,7 @@ For much more information, please visit https://simpy.readthedocs.io/en/latest/.
 ## Using simpy to simulate the production flow of toyoto
 The following diagram is got from websit:  
 https://journalofbusiness.org/index.php/GJMBR/article/download/1983/1885/.  
-Attention please:Simulation is just simply simulating the base flow of the whole process.
+Attention please:This simulation is just simply simulating the base flow of the whole process.
 
 ### Input
 Machinery（Container）：it means the main body of the toyota vehicle. It has a storage（Container）  
