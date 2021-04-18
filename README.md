@@ -13,19 +13,19 @@ For much more information, please visit https://simpy.readthedocs.io/en/latest/.
 The following diagram is got from websit:
 https://journalofbusiness.org/index.php/GJMBR/article/download/1983/1885/.
 
-1、Input
+### Input
 Machinery（Container）：it means the main body of the toyota vehicle. It has a storage（Container）
 Components（Container）：main components to build a car. It has a storage(Container), too.
-2、Activities
+### Activities
 Assembly（Container）：it gets the Machinery and components from two containers and save in assembly container. 
 Parts sequencing（process）：took several days (not hours) to make the Components to the right place.
 Setting up schedule（Process）：took several to build the scheduled plan.
 Production commence（Process）：begin to product vehicle.
-3、Output
+### Output
 Quality check（process）：check quality of body and Components
 Vehicle assembling(Process)：assemble the body and components
 Dispatch zone(container)：store the vehicle which has been made.
-4、	Closure
+### Closure
 Dispatch to dealer(process)：transport to the dealer.
 In order to get the instant information, we add a process which can monitor the whole process status.
 Process_monitor(process)：a process which monitor the whole flow.
